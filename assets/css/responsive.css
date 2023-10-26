@@ -1,0 +1,932 @@
+@media (min-width: 1631px) and (max-width: 1800px) {
+
+}
+
+/* XXL Device :1200px. */
+@media (min-width: 320px) and (max-width: 1680px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1180px;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 1399px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1140px;
+  }
+
+  .header__wrap {
+    padding: 10px 10px 10px 20px;
+}
+
+.header__wrap > ul {
+    gap: 30px;
+}
+
+.header__btn > a {
+    width: 180px;
+    height: 55px;
+    font-size: 16px;
+}
+
+header#header__area {
+    top: 30px;
+}
+
+#hero__area {
+  height: 760px;
+}
+
+.hero__imgs {
+  margin-right: -232px;
+  margin-top: -36px;
+}
+
+.hero__wrap {
+  padding: 200px 0px 212px;
+}
+
+.hero__content h1 {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.hero__content {
+  max-width: 438px;
+}
+
+.hero__btn {
+  padding: 5px 5px 5px 20px;
+  height: 60px;
+}
+
+.choose__title {
+    margin-bottom: 30px;
+}
+
+.choose__wrap > a {
+    margin-top: 30px;
+}
+
+section#choose__area {
+    padding-bottom: 68px;
+}
+
+img.remote_icon1 {
+    right: 8%;
+    top: -51px;
+}
+
+.remote__content {
+    max-width: 490px;
+}
+
+section#remote__area {
+    margin-bottom: 60px;
+}
+
+.product__title {
+    margin-bottom: 25px;
+}
+
+section#product__area {
+    margin-bottom: 55px;
+}
+
+.testimonial__slider > .owl-nav {
+    margin-top: 30px !important;
+}
+
+section#testimonial__area {
+    margin-bottom: 64px;
+}
+
+footer#footer__area {
+    margin: 30px 0px 15px;
+}
+}
+
+/* LG Device :1200px. */
+@media (min-width: 320px) and (max-width: 1199px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 960px;
+  }
+
+  .header__wrap {
+    padding: 6px 6px 6px 20px;
+}
+
+.header__wrap > a > img {
+    width: 90px;
+}
+
+.header__wrap > ul {
+    gap: 22px;
+}
+
+.header__wrap > ul > li > a {
+    font-size: 16px;
+}
+
+header#header__area {
+    top: 20px;
+}
+
+.hero__imgs {
+  margin-right: -194px;
+  margin-top: 0px;
+}
+
+#hero__area {
+  height: 660px;
+}
+
+.hero__content {
+  max-width: 400px;
+}
+
+.hero__content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero__btn {
+  height: 54px;
+}
+
+.hero__btn button {
+  font-size: 15px;
+}
+
+.hero__wrap {
+  padding: 150px 0px 232px;
+}
+
+section#hero__area > img {
+  top: 75%;
+}
+
+section#about__area {
+  margin-bottom: 60px;
+}
+
+.about__content > a {
+  max-width: 218px;
+  height: 55px;
+}
+
+.about__check {
+  margin-bottom: 20px;
+}
+
+img.remote_icon1 {
+  top: -40px;
+}
+
+.remote__content {
+  max-width: 418px;
+}
+
+.product__video > h6 {
+  max-width: 780px;
+  padding: 10px 15px;
+}
+
+.product__video__slider .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+}
+
+.product__video__slider .owl-dots {
+  top: -40px;
+}
+
+.product__video {
+  padding: 20px 15px 20px;
+}
+
+.youtube1, .youtube2, .youtube3 {
+  gap: 5px;
+  width: 120px;
+  height: 120px;
+  font-size: 9px;
+  padding: 0px 20px;
+}
+
+.youtube1 img, .youtube2 img, .youtube3 img {
+  width: 15px !important;
+}
+
+.testimonial__slider > .owl-nav > button {
+  width: 40px;
+  height: 40px;
+}
+
+.testimonial__slider > .owl-nav {
+  margin-top: 20px !important;
+}
+
+.testimonial__single__slider > img {
+  margin-bottom: 12px;
+}
+
+.header__wrap2 > a > img {
+  width: 100px;
+}
+
+.header__wrap2 {
+  padding: 8px 10px 8px 18px;
+}
+
+.header__btn2 > a {
+  width: 150px;
+  height: 48px;
+}
+
+.header__wrap2 > ul {
+  gap: 32px;
+}
+
+.hero__content2 h1 {
+  font-size: 45px;
+  line-height: 56px;
+}
+
+.hero__content2 {
+  max-width: 900px;
+}
+
+.hero__wrap2 > img {
+width: 80px;
+position: absolute;
+bottom: -103px;
+right: -68px;
+}
+
+.experience__title h2 {
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.experience__card img {
+  width: 95px;
+}
+
+.experience__card h6 {
+  font-size: 20px;
+}
+
+.experience__card {
+  padding: 20px 20px 28px;
+}
+
+img.customer_img4 {
+left: -28px;
+}
+
+section#experience__area {
+  margin-bottom: 60px;
+}
+
+img.customer_img1 {
+max-width: 340px;
+}
+
+.payment {
+  padding: 10px;
+  border-radius: 10px;
+  top: 20px;
+}
+
+.customer__rules {
+  padding: 14px;
+  border-radius: 13px;
+  right: 0px;
+}
+
+.customer__content h2 {
+font-size: 35px;
+line-height: 45px;
+margin-bottom: 16px;
+}
+
+.customer__content p {
+margin-bottom: 15px;
+}
+
+.customer__content > a, .remote__content2 > a {
+width: 160px;
+height: 50px;
+border-radius: 10px;
+}
+
+section#customer__area {
+margin-bottom: 150px;
+}
+
+.remote__content2 h2 {
+font-size: 35px;
+line-height: 45px;
+}
+
+.remote__content2 {
+gap: 14px;
+}
+
+section#remote__area2 {
+margin-bottom: 10px;
+}
+
+.submit__wrap h3 {
+font-size: 30px;
+line-height: 40px;
+}
+
+.submit__wrap {
+padding: 34px 30px 38px;
+}
+
+footer#footer__area2 {
+margin-bottom: 20px;
+}
+
+.footer__site > a {
+max-width: 224px;
+height: 45px;
+font-size: 15px;
+}
+
+.copyright2 {
+margin-top: 20px;
+padding-top: 20px;
+}
+
+.copyright__policy {
+gap: 30px;
+}
+
+.footer__social2 > a img {
+width: 25px;
+}
+
+.footer__social2 {
+gap: 14px;
+}
+
+.footer__site h6 {
+margin-bottom: 12px;
+}
+
+.footer__btn {
+height: 45px;
+}
+
+.footer__btn button {
+font-size: 15px;
+}
+}
+
+/* MD Device :768px. */
+@media (min-width: 320px) and (max-width: 991px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 720px;
+  }
+
+  .header__wrap {
+    padding: 6px 20px 6px 20px;
+}
+
+.hero__wrap {
+  padding: 0px 0px 232px;
+}
+
+.hero__content {
+  max-width: 100%;
+}
+
+.hero__imgs {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__imgs {
+  position: unset;
+  margin: 0 auto;
+}
+
+section#hero__area {
+  padding: 150px 0px 120px;
+  background-position: left center;
+  height: auto;
+}
+
+.hero__btn button {
+  max-width: 150px;
+  font-size: 14px;
+}
+
+section#hero__area > img {
+  top: 73%;
+}
+
+section#about__area {
+  margin-top: -180px;
+}
+
+.about__img {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.remote__content {
+  max-width: 100%;
+}
+
+.remote__img {
+  margin: 0 auto -38px;
+  max-width: 422px;
+}
+
+section#remote__area {
+  padding-top: 25px;
+  margin-bottom: 40px;
+}
+
+.product__video > h6 {
+  max-width: 88%;
+}
+
+section#product__area {
+  margin-bottom: 38px;
+}
+
+section#testimonial__area {
+  margin-bottom: 40px;
+}
+
+  .footer__list {
+    margin-left: 0px;
+}
+
+.footer__lists {
+  justify-content: space-between;
+}
+
+.hero__content2 h1 {
+  font-size: 38px;
+  line-height: 47px;
+}
+
+.hero__wrap2 {
+padding: 110px 0px 468px;
+}
+
+.hero__phone {
+bottom: -43px;
+}
+
+section#experience__area {
+margin-top: 125px;
+}
+
+.experience__title h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.experience__title {
+  margin-bottom: 30px;
+}
+
+img.customer_img4 {
+  left: 50px;
+  bottom: -52px;
+}
+
+.customer__imgs {
+  margin-bottom: 84px;
+}
+
+.customer__imgs {
+  margin-bottom: 84px;
+}
+
+.customer__rules {
+right: 64px;
+}
+
+.payment {
+left: 100px;
+}
+
+.customer__content {
+  max-width: 100%;
+}
+
+.customer__content h2 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+section#customer__area {
+  margin-bottom: 16px;
+}
+
+.remote__img2 > a > img {
+  width: 80px;
+}
+
+section#submit__area {
+margin-top: -40px;
+}
+
+.submit__wrap {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.submit__wrap h3 {
+  max-width: 100%;
+}
+
+.footer__site.footer__site3 {
+  align-items: start;
+  margin-top: 15px;
+}
+
+.copyright2 {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.copyright__policy a {
+  font-size: 16px;
+}
+
+.copyright__policy {
+column-gap: 24px;
+row-gap: 5px;
+flex-wrap: wrap;
+}
+}
+
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  section#hero__area {
+    padding-bottom: 100px;
+}
+
+section#about__area {
+  margin-top: -110px;
+}
+
+section#hero__area > img {
+  top: 74%;
+}
+
+section#hero__area > img {
+  top: 74%;
+  width: 11%;
+}
+
+  .hero__wrap {
+    padding: 0px 0px 200px;
+}
+
+.hero__content h1 {
+  font-size: 30px;
+}
+
+.hero__btn input {
+  max-width: 150px;
+}
+
+.about__content h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.product__video > h6 {
+  max-width: 80%;
+  margin-bottom: 8px;
+}
+
+.remote__content h2 {
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+
+.remote__content p {
+  margin-bottom: 20px;
+}
+
+.remote__content a {
+  width: 208px;
+  height: 55px;
+  font-size: 16px;
+}
+
+section#choose__area {
+  padding-bottom: 41px;
+}
+
+.choose__card > img {
+  width: 85px;
+  margin-bottom: 22px;
+}
+
+.choose__wrap > a {
+  width: 180px;
+  height: 55px;
+}
+
+.product__title h2 {
+  font-size: 28px;
+}
+
+.choose__title h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.youtube1, .youtube2, .youtube3 {
+  width: 96px;
+  height: 96px;
+}
+
+.testimonial__single__slider > h6 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 6px;
+}
+
+img.testimonial_shape {
+  left: 34px;
+  bottom: -244px;
+}
+
+.product__video__slider .owl-dots {
+  top: -28px;
+  gap: 4px;
+}
+
+.product__video__slider .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+}
+
+.copyright {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__content2 h1 {
+  font-size: 35px;
+}
+
+.hero__content2 p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hero__wrap2 {
+padding: 110px 0px 360px;
+}
+
+.hero__wrap2 > img {
+width: 68px;
+bottom: -55px;
+right: -44px;
+}
+
+.hero__phone {
+bottom: -20px;
+}
+
+section#experience__area {
+margin-top: 80px;
+}
+
+.experience__title h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.experience__title p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.experience__card p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.payment {
+  left: 20px;
+}
+
+.customer__rules {
+  right: 0px;
+}
+
+.customer__content h2 {
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.customer__content p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section#customer__area {
+  margin-bottom: 0px;
+}
+
+.remote__content2 h2 {
+font-size: 28px;
+line-height: 38px;
+}
+
+.remote__content2 p {
+  font-size: 16px;
+}
+
+.submit__wrap h3 {
+  font-size: 27px;
+  line-height: 38px;
+}
+
+.submit__btn p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer__site > a {
+height: 48px;
+font-size: 16px;
+}
+
+.footer__site.footer__site2 {
+  margin-left: 0px;
+  margin-top: 15px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  header#header__area {
+    top: 10px;
+}
+
+.hero__wrap {
+  padding: 0px 0px 200px;
+}
+
+section#hero__area {
+  padding-top: 110px;
+  padding-bottom: 55px;
+}
+
+section#hero__area {
+  padding-top: 115px;
+}
+
+.hero__imgs {
+  position: unset;
+  margin: 0 auto;
+  width: 72%;
+}
+
+  .hero__content h1 {
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.header__wrap > a > img {
+  width: 84px;
+}
+
+.header__btn > a {
+  width: 140px;
+  height: 42px;
+  font-size: 13px;
+}
+
+.header__btn {
+  gap: 12px;
+}
+
+.footer__lists {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__list > ul > li > a {
+  margin-bottom: 5px;
+}
+
+.header__wrap2 > a > img {
+  width: 80px;
+}
+
+.header__btn2 {
+  gap: 12px;
+}
+
+.header__btn2 > a {
+width: 140px;
+height: 44px;
+border-radius: 6px;
+font-size: 15px;
+}
+
+.header__wrap2 {
+padding: 8px 10px 8px 10px;
+border-radius: 0px 0px 10px 10px;
+}
+
+.hero__content2 h1 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.hero__phone {
+position: unset;
+margin: 20px auto 0px;
+max-width: 350px;
+}
+
+.hero__wrap2 {
+padding: 110px 0px 0px;
+}
+
+.hero__wrap2 > img {
+bottom: -39px;
+right: 19px;
+}
+
+section#experience__area {
+margin-top: 45px;
+}
+
+.submit__btn {
+max-width: 100%;
+}
+
+.submit__wrap h3 {
+font-size: 25px;
+line-height: 33px;
+}
+
+.input__btn {
+padding: 4px 4px 4px 8px;
+height: 48px;
+border-radius: 9px;
+}
+
+.input__btn button {
+border-radius: 9px;
+width: 68px;
+}
+
+.submit__wrap {
+padding: 16px 16px 24px;
+}
+}
+
+/* SM Small Device :576px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 540px;
+  }
+
+}

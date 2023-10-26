@@ -1,0 +1,1435 @@
+/*===================== REUSABLE  CSS AREA START =====================*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btns {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+main {
+  overflow: hidden !important;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+/*===================== REUSABLE CSS AREA END =====================*/
+
+/*===================== OFFCANVAS CSS AREA START =====================*/
+.menu-close {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 1px solid #fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-close:hover {
+  color: #000;
+  background: #fff;
+}
+
+.offcanvas-area {
+  position: fixed;
+  left: -100%;
+  height: 100%;
+  width: 318px;
+  z-index: 9999;
+  padding-top: 35px;
+  background: #3CA946;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  visibility: hidden;
+  top: 0;
+  overflow-y: scroll;
+}
+
+.offcanvas-area.active {
+  left: 0;
+  visibility: visible;
+}
+
+.offcanvas-area .main-menu ul li a {
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  padding: 16px 22px;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+}
+.offcanvas-area .main-menu ul li a:hover {
+  color: #000 !important;
+  background: #fff;
+}
+.offcanvas-area .main-menu ul li:first-child a {
+  border-top: 1px solid #fff;
+}
+
+.offcanvas-area .main-menu ul li a:hover,
+.offcanvas-area .main-menu ul li a[aria-expanded="true"] {
+  color: #d5d5d5;
+}
+
+.offcanvas-menu .main-menu ul {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 35px;
+  list-style: none;
+}
+
+.offcanvas-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 99;
+}
+
+.offcanvas-overlay.active {
+  opacity: 0.4;
+  visibility: visible;
+}
+
+.offcanvas-area {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.offcanvas-area::-webkit-scrollbar {
+  display: none;
+}
+.offcanvas-menu {
+  margin-top: 100px;
+}
+/*===================== OFFCANVAS CSS AREA END =====================*/
+
+/*===================== HEADER CSS AREA START =====================*/
+.header__wrap {
+  background: #fff;
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 20px 35px;
+}
+
+header#header__area {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  right: 0px;
+  background: transparent;
+  z-index: 99;
+}
+
+.header__wrap > ul > li > a {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2E2D32;
+}
+
+.header__wrap > ul > li > a:hover,.footer__list > ul > li > a:hover {
+  color: #28803F;
+}
+
+.header__wrap > ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__btn > a {
+  background: linear-gradient(133.67deg, #8DC63F 0%, #009247 107.56%),
+linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  width: 210px;
+  height: 60px;
+  border-radius: 90px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__btn > a:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #FFFFFF4D;
+  border-radius: 90px;
+}
+
+.header__bar a {
+  font-size: 24px;
+  color: #8DC63F;
+}
+/*===================== HEADER CSS AREA END =====================*/
+
+/*===================== HERO CSS AREA START =====================*/
+#hero__area {
+  background-image: url('../img/hero_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  height: 918px;
+}
+
+section#hero__area > img {
+  position: absolute;
+  top: 72%;
+  left: 6%;
+  width: 8%;
+}
+
+.hero__imgs {
+  margin-right: -422px;
+  margin-top: -60px;
+}
+
+.hero__wrap {
+  position: relative;
+  padding-top: 300px;
+}
+
+.hero__content {
+  color: #fff;
+  max-width: 505px;
+}
+
+.hero__content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.hero__content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.hero__btn {
+  width: 100%;
+  height: 73px;
+  background: #fff;
+  border-radius: 90px;
+  overflow: hidden;
+  padding: 10px 10px 10px 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 18px 78px 0px #62618A1F;
+}
+
+.hero__btn button {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: #000;
+  height: 100%;
+  border-radius: 90px;
+  max-width: 202px;
+  width: 100%;
+}
+/*===================== HERO CSS AREA END =====================*/
+
+/*===================== ABOUT CSS AREA START =====================*/
+section#about__area {
+  position: relative;
+  margin-bottom: 83px;
+  z-index: 1;
+}
+
+.about__check p img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.about__content p {
+  color: #666666;
+}
+
+.about__content > p {
+  line-height: 25px;
+  margin-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about__check > p {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.about__content h2 {
+  color: #2F3329;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.about__check h6 {
+  margin-bottom: 14px;
+  color: #2F3329;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about__check {
+  margin-bottom: 35px;
+}
+
+.about__content > a img {
+  width: 5px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.about__content > a {
+  max-width: 263px;
+  height: 62px;
+  border-radius: 90px;
+  border: 2px solid #C0F972;
+  color: #2F3329;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about__content > a:hover {
+  background-image: linear-gradient(133.04deg, #C0F972 -20.29%, #43C682 94.98%), linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.about__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*===================== ABOUT CSS AREA END =====================*/
+
+/*===================== CHOOSE CSS AREA START =====================*/
+section#choose__area {
+  padding-bottom: 137px;
+  position: relative;
+}
+
+section#choose__area > img {
+  position: absolute;
+  bottom: -500px;
+  right: 0px;
+  width: 60%;
+  z-index: -1;
+}
+
+.choose__title img {
+  width: 184px;
+}
+
+.choose__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 54px;
+  text-align: center;
+}
+
+.choose__title h2 {
+  color: #2F3329;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.choose__card > img {
+  width: 85px;
+  margin-bottom: 35px;
+}
+
+.choose__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 45px 35px;
+  background: transparent;
+  border-radius: 15px;
+}
+
+.choose__card h6 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 17px;
+  color: #2F3329;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.choose__card p {
+  line-height: 25px;
+  color: #565A69;
+}
+
+.choose__card:hover {
+  box-shadow: 8px 45px 58px -39px #A0A2B512;
+  background: #fff;
+}
+
+.choose__wrap > a {
+  width: 213px;
+  height: 62px;
+  border: 2px solid #C0F972;
+  border-radius: 90px;
+  color: #2F3329;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+
+.choose__wrap > a img {
+  width: 5px;
+  margin-left: 10px;
+}
+
+.choose__wrap > a:hover {
+  background-image: linear-gradient(133.04deg, #C0F972 -20.29%, #43C682 94.98%),
+linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+/*===================== CHOOSE CSS AREA END =====================*/
+
+/*===================== REMOTE CSS AREA START =====================*/
+#remote__area {
+  background-image: url('../img/remote_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 35px 0px 0px;
+  margin-bottom: 92px;
+}
+
+img.remote_icon1 {
+  position: absolute;
+  top: -68px;
+  right: 10%;
+  width: 6%;
+}
+
+.remote__content a img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.remote__content a {
+  border-radius: 90px;
+  background: #2F3329;
+  width: 251px;
+  height: 63px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.remote__content {
+  color: #fff;
+  max-width: 535px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.remote__content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 18px;
+}
+
+.remote__content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+
+.remote__img {
+  max-width: 508px;
+  margin-bottom: -50px;
+}
+/*===================== REMOTE CSS AREA END =====================*/
+
+/*===================== PRODUCT CSS AREA START =====================*/
+.product__title {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.product__title span, .choose__title span {
+  background-image: linear-gradient(133.67deg, #8DC63F 0%, #009247 107.56%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.product__title h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.youtube1 img,.youtube2 img,.youtube3 img {
+  width: 23px !important;
+}
+
+.youtube1,.youtube2,.youtube3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 0.91px solid #F1EBE5;
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 11px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0px 45px;
+}
+
+.video__img {
+  position: relative;
+}
+
+.product__video {
+  padding: 26px 31px 36px;
+  box-shadow: 0px 44px 85px 0px #41478314;
+}
+
+.product__video > h6 {
+  font-weight: 600;
+  color: #8993AE;
+  font-size: 16px;
+  background: #fff;
+  padding: 13px 17px;
+  border-radius: 11px;
+  max-width: 927px;
+  margin-left: auto;
+  margin-bottom: 17px;
+}
+
+.product__video__slider .owl-nav {
+  display: none;
+}
+
+.product__video__slider .owl-dots {
+  position: absolute;
+  top: -45px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product__video__slider {
+  position: relative;
+}
+
+.product__video__slider .owl-dots .owl-dot span {
+  margin: 0px;
+  width: 14.66px;
+  height: 14.66px;
+  background: #7A7F73;
+}
+
+.product__video__slider .owl-dots .owl-dot.active span, .product__video__slider .owl-dots .owl-dot:hover span {
+  background: #28803F;
+}
+
+section#product__area {
+  position: relative;
+  margin-bottom: 91px;
+}
+/*===================== PRODUCT CSS AREA END =====================*/
+
+/*===================== TESTIMONIAL CSS AREA START =====================*/
+.testimonial__single__slider > img {
+  width: 41px !important;
+  margin-bottom: 23px;
+}
+
+.testimonial__single__slider {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 8px 45px 58px -39px #A0A2B50A;
+}
+
+.testimonial__single__slider > h6 {
+  color: #272F26;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+
+.testimonial__single__slider p {
+  line-height: 23px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.testimonial__user > img {
+  width: 56px !important;
+}
+
+.testimonial__user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user__name h6 {
+  color: #272F26;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.user__name span {
+  color: #696B72;
+  font-family: 'Jost', sans-serif;
+}
+
+.testimonial__slider > .owl-dots {
+  display: none;
+}
+
+.testimonial__slider > .owl-nav [class*=owl-]:hover {
+  background: linear-gradient(133.04deg, #C0F972 -20.29%, #43C682 94.98%) !important;
+}
+
+.testimonial__slider > .owl-nav > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background: #000 !important;
+}
+
+.testimonial__slider > .owl-nav > button > img {
+  width: 21px;
+}
+
+.testimonial__slider > .owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px !important;
+}
+
+section#testimonial__area {
+  margin-bottom: 140px;
+  position: relative;
+}
+
+img.testimonial_shape {
+  position: absolute;
+  left: -134px;
+  bottom: -744px;
+  z-index: -1;
+} 
+/*===================== TESTIMONIAL CSS AREA END =====================*/
+
+/*===================== FOOTER CSS AREA START =====================*/
+.footer__content > a > img {
+  width: 109px;
+  margin-bottom: 12px;
+}
+
+.footer__content {
+  max-width: 405px;
+}
+
+.footer__content p {
+  font-size: 13px;
+  color: #616161;
+  line-height: 21px;
+  margin-bottom: 21px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer__social > a > img {
+  width: 15px;
+}
+
+.footer__social > a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #E4E4E4;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__social > a:nth-child(2) img {
+  filter: brightness(0.5);
+}
+
+.footer__social > a:hover {
+  background: #1C1C1C;
+}
+
+.footer__social > a:hover img {
+  filter: brightness(4.5);
+}
+
+.footer__lists {
+  display: flex;
+  gap: 60px;
+}
+
+.footer__list h6 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1C1C1C;
+}
+
+.footer__list > ul > li > a {
+  color: #545454;
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+a.playstor__mac > img {
+  max-width: 125px;
+}
+
+a.playstor__mac {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.footer__list {
+  max-width: 125px;
+  margin-left: auto;
+}
+
+.copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #B8B8B8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bankcard > a img {
+  width: 34px;
+}
+
+.bankcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.copyright span {
+  font-size: 13px;
+  color: #969696;
+}
+
+.privacy a {
+  color: #1C1C1C;
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+footer#footer__area {
+  margin-bottom: 86px;
+}
+/*===================== FOOTER CSS AREA END =====================*/
+
+
+/*===================== HEADER CSS AREA START =====================*/
+.header__wrap2 > a > img {
+  width: 127px;
+}
+
+.header__wrap2 {
+  background: #fff;
+  border-radius: 0px 0px 25px 25px;
+  padding: 17px 20px 17px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__wrap2 > ul {
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.header__wrap2 > ul > li > a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2E2D32;
+}
+
+header#header__area2 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background: transparent;
+  z-index: 99;
+}
+
+.header__btn2 > a {
+  width: 197px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(133.67deg, #8DC63F 0%, #009247 107.56%);
+  font-weight: 700;
+  color: #fff;
+}
+
+.header__btn2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__bar a {
+  color: #8DC63F;
+  font-size: 24px;
+}
+/*===================== HEADER CSS AREA END =====================*/
+
+/*===================== HERO CSS AREA START =====================*/
+#hero__area2 {
+  background-image: url('../img/hero_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.hero__wrap2 {
+  padding: 142px 0px 604px;
+  position: relative;
+  max-width: 1038px;
+  margin: 0 auto;
+}
+
+.hero__all__phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.phone__slider > .owl-nav {
+  display: none;
+}
+
+.single__phone {
+  border-radius: 51px;
+  box-shadow: 0px 9.85957px 21.99442px 0px rgba(0, 0, 0, 0.15), 0px 40.1967px 40.1967px 0px rgba(0, 0, 0, 0.13), 0px 90.25298px 54.60684px 0px rgba(0, 0, 0, 0.08), 0px 160.7868px 64.46641px 0px rgba(0, 0, 0, 0.02), 0px 251.03979px 70.53384px 0px rgba(0, 0, 0, 0.00);
+}
+
+.hero__phone {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -78px;
+}
+
+.phone__slider .owl-dots .owl-dot span {
+  margin: 0;
+  background: #7A7F73;
+}
+
+.phone__slider .owl-dots {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.phone__slider .owl-dots .owl-dot.active span, .phone__slider .owl-dots .owl-dot:hover span {
+  background: #28803F;
+}
+
+.hero__wrap2 > img {
+  width: 98px;
+  position: absolute;
+  bottom: -111px;
+  right: -100px;
+}
+
+.hero__content2 {
+  text-align: center;
+}
+
+.hero__content2 h1 {
+  font-size: 55px;
+  font-weight: 700;
+  font-family: 'Jost', sans-serif;
+  line-height: 72px;
+  margin-bottom: 12px;
+}
+
+.hero__content2 h1 span {
+  background: #ffffffc9;
+  border-radius: 180px;
+  padding: 0px 20px;
+}
+
+.hero__content2 p {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: 'Inter', sans-serif;
+}
+/*===================== HERO CSS AREA END =====================*/
+
+/*===================== EXPERIENCE CSS AREA START =====================*/
+.experience__title {
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+section#experience__area {
+  position: relative;
+  margin-bottom: 142px;
+  margin-top: 180px;
+}
+
+.experience__title h2 {
+  color: #101010;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.experience__title p {
+  color: #757B8A;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 993px;
+  margin: 0 auto;
+  font-family: 'Jost', sans-serif;
+}
+
+.experience__card img {
+  width: 110px;
+}
+
+.experience__card h6 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #12243E;
+  margin-bottom: 11px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.experience__card p {
+  color: #12243E;
+  font-size: 17px;
+  line-height: 26px;
+  font-family: 'Jost', sans-serif;
+}
+
+.experience__card {
+  padding: 30px 31px 35px;
+  background: #F2F6F0D9;
+}
+
+.experience__card:hover {
+  background: #fff;
+  box-shadow: 0px 54px 55px 0px #00000012;
+}
+/*===================== EXPERIENCE CSS AREA END =====================*/
+
+/*===================== CUSTOMER CSS AREA START =====================*/
+section#customer__area {
+  position: relative;
+  margin-bottom: 204px;
+}
+
+.customer__imgs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.customer_img1 {
+  max-width: 419px;
+}
+
+img.customer_img4 {
+  width: 55px;
+  position: absolute;
+  bottom: -68px;
+  left: -72px;
+}
+
+.payment > img {
+  width: 40px;
+}
+
+.payment {
+  position: absolute;
+  top: 37px;
+  left: -11px;
+  max-width: 257px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 20px 40px 80px 0px #2D33511F;
+}
+
+.payment__name h6 img {
+  width: 20px;
+  margin-left: 7px;
+}
+
+.payment__name h6 {
+  color: #101010;
+  font-weight: 700;
+}
+
+.payment__name span {
+  color: #757B8A;
+  font-size: 14px;
+}
+
+.customer__rules {
+  position: absolute;
+  right: -28px;
+  bottom: -68px;
+  background: #fff;
+  max-width: 269px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 20px 40px 80px 0px #2D33511F;
+}
+
+.customer__rule img {
+  width: 49px;
+}
+
+.customer__rule {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.systems h6 {
+  color: #101010;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.systems span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #757B8A;
+}
+
+.customer__content {
+  max-width: 506px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Jost', sans-serif;
+}
+
+.customer__content h2 {
+  color: #101010;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 24px;
+}
+
+.customer__content p {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.customer__content p:nth-child(2) {
+  color: #101010;
+}
+
+.customer__content p:nth-child(3) {
+  color: #757B8A;
+}
+
+.customer__content > a, .remote__content2 > a {
+  border-radius: 14px;
+  width: 197px;
+  height: 56px;
+  background: linear-gradient(133.67deg, #8DC63F 0%, #009247 107.56%);
+  color: #fff;
+  font-weight: 700;
+}
+/*===================== CUSTOMER CSS AREA END =====================*/
+
+/*===================== REMOTE CSS AREA START =====================*/
+section#remote__area2 {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.remote__content2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 45px;
+  font-family: 'Jost', sans-serif;
+}
+
+.remote__img2 > a > img {
+  width: 116px;
+}
+
+.remote__img2 {
+  position: relative;
+}
+
+.remote__img2 > a {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.remote__content2 h2 {
+  color: #101010;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.remote__content2 p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #757B8A;
+}
+/*===================== REMOTE CSS AREA END =====================*/
+
+/*===================== SUBMIT CSS AREA START =====================*/
+.submit__wrap {
+  position: relative;
+  padding: 46px 55px 60px;
+  border: 8px solid #FFFFFF21;
+  border-radius: 12px;
+  box-shadow: 0px 23px 59px 0px #2AA24561;
+  background: linear-gradient(134deg, #8DC63F 0%, #009247 107.56%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 67px;
+  color: #fff;
+}
+
+.submit__wrap > img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+section#submit__area {
+  margin-bottom: 70px;
+}
+
+.submit__wrap h3 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 52px;
+  font-family: 'Jost', sans-serif;
+  max-width: 510px;
+}
+
+.submit__btn p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  margin-bottom: 17px;
+}
+
+.input__btn {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 8px 8px 20px 0px #145F940F;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 8px 24px;
+  gap: 8px;
+}
+
+.input__btn input {
+  font-size: 14px;
+  font-weight: 500;
+  color: #848FAC;
+}
+
+.input__btn button {
+  border-radius: 15px;
+  width: 118px;
+  background: #3CA844;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+/*===================== SUBMIT CSS AREA END =====================*/
+
+/*===================== FOOTER CSS AREA START =====================*/
+.footer__social2 > a img {
+  width: 32px;
+}
+
+.footer__social2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__site h6 {
+  color: #179B46;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer__site p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2F2F2F;
+  line-height: 24px;
+  margin-bottom: 26px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer__btn {
+  background: #F4F6FF;
+  border-radius: 180px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer__btn input {
+  background: transparent;
+  padding-left: 19px;
+}
+
+.footer__btn button {
+  background: #141416;
+  height: 100%;
+  color: #fff;
+  font-weight: 600;
+  width: 118px;
+  border-radius: 180px;
+}
+
+.footer__site > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6060607D;
+  border-radius: 50px;
+  max-width: 286px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2F2F2F;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer__site > a img {
+  margin-right: 10px;
+  width: 24px;
+}
+
+footer#footer__area2 {
+  position: relative;
+  margin-bottom: 93px;
+}
+
+.footer__site.footer__site1 {
+  max-width: 329px;
+}
+
+.footer__site.footer__site2 {
+  max-width: 324px;
+  margin-left: 85px;
+}
+
+.footer__site.footer__site3 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.copyright2 {
+  border-top: 1px solid #dbdbdb;
+  padding-top: 38px;
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright2 span {
+  color: #848FAC;
+  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+}
+
+.copyright__policy {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+.copyright__policy a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1E1E1E;
+  font-family: 'Manrope', sans-serif;
+}
+/*===================== FOOTER CSS AREA END =====================*/
